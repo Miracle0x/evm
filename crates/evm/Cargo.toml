@@ -21,7 +21,6 @@ alloy-eips.workspace = true
 alloy-hardforks.workspace = true
 
 revm.workspace = true
-op-revm = { workspace = true, optional = true }
 
 auto_impl.workspace = true
 derive_more.workspace = true
@@ -40,7 +39,5 @@ std = [
 	"alloy-eips/std",
 	"alloy-sol-types/std",
 	"derive_more/std",
-	"op-revm?/std",
 	"thiserror/std"
 ]
-op = ["op-revm"]

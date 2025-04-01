@@ -16,13 +16,6 @@ impl IntoTxEnv<Self> for TxEnv {
     }
 }
 
-#[cfg(feature = "op")]
-impl<T: revm::context::Transaction> IntoTxEnv<Self> for op_revm::OpTransaction<T> {
-    fn into_tx_env(self) -> Self {
-        self
-    }
-}
-
 /// Helper user-facing trait to allow implementing [`IntoTxEnv`] on instances of [`Recovered`].
 pub trait FromRecoveredTx<Tx> {
     /// Builds a `TxEnv` from a transaction and a sender address.
