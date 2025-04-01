@@ -1,5 +1,5 @@
 [workspace]
-members = ["crates/*"]
+members = ["crates/evm"]
 resolver = "2"
 
 [workspace.package]
@@ -36,7 +36,6 @@ rustdoc-args = ["--cfg", "docsrs"]
 
 [workspace.dependencies]
 alloy-evm = { version = "0.1.0-alpha.2", path = "crates/evm", default-features = false }
-alloy-op-evm = { version = "0.1.0-alpha.2", path = "crates/op-evm", default-features = false }
 
 # alloy
 alloy-eip2124 = { version = "0.1", default-features = false }
@@ -47,13 +46,8 @@ alloy-primitives = { version = "0.8.22", default-features = false }
 alloy-sol-types = { version = "0.8.22", default-features = false }
 alloy-hardforks = { version = "0.1" }
 
-# op-alloy
-alloy-op-hardforks = { version = "0.1" }
-op-alloy-consensus = { version = "0.11", default-features = false }
-
 # revm
 revm = { git = "https://github.com/Miracle0x/revm", branch = "main", default-features = false }
-op-revm = { version = "1.0.0-alpha.5", default-features = false }
 
 # misc
 auto_impl = "1"
