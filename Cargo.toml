@@ -52,8 +52,8 @@ alloy-op-hardforks = { version = "0.1" }
 op-alloy-consensus = { version = "0.12", default-features = false }
 
 # revm
-revm = { version = "21.0.0", default-features = false }
-op-revm = { version = "2.0.0", default-features = false }
+revm = { git = "https://github.com/Miracle0x/revm", branch = "main", default-features = false }
+op-revm = {  git = "https://github.com/Miracle0x/revm", branch = "main", package = "op-revm", default-features = false }
 
 # misc
 auto_impl = "1"
